@@ -19,7 +19,7 @@ or to start the flask app in debug mode
 
     ~$ python app.py -d
 
-Go to http://0.0.0.0:8080/ and you will see a basic website that can be customtized for a project.
+Go to http://127.0.0.1:8081/ and you will see a basic website that can be customtized for a project.
     
 To test the model directly
 ----------------------------
@@ -35,7 +35,7 @@ To build the docker container
 
 .. code-block:: bash
 
-    ~$ docker build -t iris-ml .
+    ~$ docker build -t aavail-ml .
 
 Check that the image is there.
 
@@ -85,7 +85,7 @@ Run the container to test that it is working
 
 .. code-block:: bash
 
-    ~$ docker run -p 4000:8080 iris-ml
+    ~$ docker run -p 4000:8080 aavail-ml
 
 Go to http://0.0.0.0:4000/ and you will see a basic website that can be customtized for a project.
 
